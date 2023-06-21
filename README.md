@@ -1,7 +1,21 @@
 # Дипломный проект "Доска объявлений"
 
-Инструкция по запуску:
+### Базовая документация к проекту
 
-1. Склонируйте репозиторий через git clone
-2. Запустите команду python3 manage.py runserver
-3. Доступные эндпоинты можно посмотреть здесь: http://127.0.0.1:8000/swagger/
+
+* Ubuntu 20.04 LTS
+* Python 3.8
+* PostgreSQL 14
+* Django 3.2
+* Зависимости (Python) из requirements.txt
+
+### Инструкция по запуску:
+```
+source env/bin/activate
+cd skymarket
+pip3 install -r requirements.txt
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py collectstatic
+python3 manage.py runserver
+
